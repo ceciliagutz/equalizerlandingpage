@@ -1,9 +1,34 @@
+.pricing{
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1 rem;
+}
+.contenedor-slate{
+    background-color: #191826;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1110px;
+    max-height: 600px;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+.pricing-imagen{
+    width: 250px;
+    max-width: 100%;
+    border-radius: 12px;
+}
 .tarjeta{
     background-color: #ffa745;
     color: #191826;
     border-radius: 12px;
     padding: 2rem;
     max-width: 320px;
+    flex: 1;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     text-align: left;
 }
@@ -17,15 +42,26 @@
     line-height: 1.4rem;
     margin-bottom: 1.5rem;
 }
+.pricing-precio {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
 .pricing-precio, .dinero{
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
 }
 .periodo{
      font-size: .9rem;
-    line-height: 1.4rem;
-    margin-bottom: 1.5rem;
+     margin: 0;
+    font-weight: normal;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
 }
 .buttons button{
    flex: 1;
@@ -59,4 +95,19 @@
 }
 .buttons button:active{
     transform: scale(.95);
+}
+
+@media (max-width: 768px) {
+  .contenedor-negro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tarjeta {
+    max-width: 100%;
+  }
+
+  .mockup img {
+    width: 180px;
+  }
 }
