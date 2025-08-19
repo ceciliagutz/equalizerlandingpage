@@ -1,0 +1,77 @@
+.footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #191826;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-left {
+    flex:1;
+}
+.logo-footer{
+    font-size: 40px;
+    font-weight: bold;
+    color: #191826;
+    margin-bottom: 10px;
+}
+.info-footer{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 400px;
+}
+.derechos , .contactus{
+    font-size: 18px;
+    font-weight:normal;
+    color: #191826;
+   
+}
+.correo{
+    font-size: 18px;
+    font-weight:bold;
+    color: #191826;
+    margin: 5px 0;
+}
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.social-links{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.social-icon{
+    font-size: 30px;
+    color:#191826;
+    transition: color 0.2s ease-in-out;
+}
+.social-icon:hover{
+    color: #fa7453
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .info-footer,
+  .footer-email,
+  .footer-right {
+    align-items: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
