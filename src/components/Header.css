@@ -1,20 +1,27 @@
-body{
-    padding-top: 100px;
-}
+
 .header {
-  width: 100%;
-  padding: 0px 40px;
-  display: flex;
-  justify-content: flex-start; 
-  align-items: center;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  border-bottom: 1px solid #d4d4d3;
+    width: 100%;
+    padding: 10px 2%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #d4d4d3;
 }
 
 .logo {
-  font-size: 40px;
-  font-weight: bold;
-  color: #191826;
+    font-size: 32px;
+    font-weight: bold;
+    color: #191826;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px;
+    }
 }
