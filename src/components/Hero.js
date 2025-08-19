@@ -1,9 +1,13 @@
 import './Hero.css';
+import Decoracion from './../assets/Decoración.png'
 
 
 function Hero() {
   return (
     <section className="hero">
+       <div className="decoracion-derecha">
+<img src={Decoracion} alt="Decoración" />
+</div>
       <div className="hero-texto">
         <h1 className="hero-titulo">
           We make your music <br />
