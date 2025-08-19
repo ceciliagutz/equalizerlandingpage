@@ -6,6 +6,9 @@ function Pricing() {
     return (
         <section className='pricing'>
             <div className='contenedor-slate'>
+                 <div className="princing-imagen">
+                    <img src={Celular} alt="Equalizer app celular" />
+                </div>
                 <div className='tarjeta'>
                     <h3 className='pricing-titulo'>Premium EQ </h3>
                     <p className='pricing-informacion'>
@@ -24,9 +27,7 @@ function Pricing() {
                             <FaAndroid className='icon-android' /> Android Download</button>
                     </div>
                 </div>
-                <div className="princing-imagen">
-                    <img src={Celular} alt="Equalizer app celular" />
-                </div>
+               
 
             </div>
         </section>

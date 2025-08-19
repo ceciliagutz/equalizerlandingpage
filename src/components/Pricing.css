@@ -1,9 +1,10 @@
-.pricing{
+.pricing {
     display: flex;
     justify-content: center;
-    padding: 4rem 1 rem;
+    padding: 4rem 1rem;
 }
-.contenedor-slate{
+
+.contenedor-slate {
     background-color: #191826;
     border-radius: 20px;
     padding: 3rem 2rem;
@@ -12,17 +13,18 @@
     align-items: center;
     gap: 3rem;
     max-width: 1110px;
-    max-height: 600px;
     width: 100%;
     flex-wrap: wrap;
-    
+
 }
-.pricing-imagen{
+
+.pricing-imagen {
     width: 250px;
     max-width: 100%;
     border-radius: 12px;
 }
-.tarjeta{
+
+.tarjeta {
     background-color: #ffa745;
     color: #191826;
     border-radius: 12px;
@@ -32,82 +34,130 @@
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     text-align: left;
 }
-.pricing-titulo{
+
+.pricing-titulo {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
-.pricing-informacion{
-    font-size: .9rem;
+
+.pricing-informacion {
+    font-size: 0.9rem;
     line-height: 1.4rem;
     margin-bottom: 1.5rem;
 }
+
 .pricing-precio {
-  display: flex;
-  align-items: flex-end;
-  gap: 0.3rem;
-  margin-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 0.3rem;
+    margin-bottom: 1.5rem;
 }
 
-.pricing-precio, .dinero{
+.pricing-precio,
+.dinero {
     font-size: 2.5rem;
     font-weight: bold;
 }
-.periodo{
-     font-size: .9rem;
-     margin: 0;
+
+.periodo {
+    font-size: 0.9rem;
+    margin: 0;
     font-weight: normal;
 }
-.buttons{
+
+.buttons {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
 }
-.buttons button{
-   flex: 1;
-  padding: 0.7rem;
-  border-radius: 8px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem
+
+.buttons button {
+    flex: 1;
+    padding: 0.7rem;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem
 }
-.ios{
+
+.ios {
     background-color: #191826;
     color: white;
 }
-.android{
+
+.android {
     background-color: white;
     color: #191826;
 }
 
-.ios:hover{
+.ios:hover {
     background-color: #66e2dc;
     color: white;
 }
-.android:hover{
+
+.android:hover {
     background-color: #ffb964;
     color: #191826;
 }
-.buttons button:active{
+
+.buttons button:active {
     transform: scale(.95);
 }
 
 @media (max-width: 768px) {
-  .contenedor-negro {
-    flex-direction: column;
-    text-align: center;
-  }
+    .contenedor-slate {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
 
-  .tarjeta {
-    max-width: 100%;
-  }
+    .tarjeta {
+        flex: unset;
+        width: 100%;
+        max-width: 90%;
+    }
 
-  .mockup img {
-    width: 180px;
-  }
+    .pricing-imagen {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tarjeta {
+        padding: 1.5rem;
+        max-width: 95%;
+    }
+
+    .pricing-imagen {
+        width: 150px;
+    }
+
+    .pricing-precio,
+    .dinero {
+        font-size: 2rem;
+    }
+
+    .pricing-titulo {
+        font-size: 1.2rem;
+    }
+
+    .pricing-informacion {
+        font-size: 0.8rem;
+    }
+
+    .buttons {
+        gap: 0.6rem;
+    }
+
+    .buttons button {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
 }
