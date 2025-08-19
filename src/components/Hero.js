@@ -1,5 +1,5 @@
 import './Hero.css';
-import Celular from './../assets/Celular.png';
+
 
 function Hero() {
   return (
@@ -14,9 +14,6 @@ function Hero() {
         </p>
       </div>
 
-      <div className="hero-imagen">
-        <img src={Celular} alt="Equalizer app celular" />
-      </div>
     </section>
   );
 }

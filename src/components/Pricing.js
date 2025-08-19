@@ -1,5 +1,6 @@
 import './Pricing.css';
 import { FaApple, FaAndroid } from 'react-icons/fa';
+import Celular from './../assets/Celular.png';
 
 function Pricing() {
     return (
@@ -16,10 +17,13 @@ function Pricing() {
                 </div>
                 <div className='buttons'>
                     <button className='ios'>
-                        <FaApple className='icon-ios'/>
+                        <FaApple className='icon-ios' />
                         iOS Download</button>
                     <button className='android'>
-                        <FaAndroid className='icon-android'/> Android Download</button>
+                        <FaAndroid className='icon-android' /> Android Download</button>
+                </div>
+                <div className="princing-imagen">
+                    <img src={Celular} alt="Equalizer app celular" />
                 </div>
             </div>
         </section>
