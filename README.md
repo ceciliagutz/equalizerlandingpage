@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+✨ Equalizer Landing Page ✨
+---
+Deploy actual: https://dazzling-smakager-12c910.netlify.app/
+Figma Diseño: https://www.figma.com/design/wD8sSKFAhQ4vTawNz8yOHu/equalizer-landing-page?node-id=101-102&t=mZ6JURjACwX4olTT-1
+Código en GitHub: https://github.com/ceciliagutz/equalizerlandingpage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+EQ Landing Page es una landing page interactiva para una app de ecualizador de música, enfocada en mostrar los beneficios de la aplicación, con un diseño atractivo y moderno. El objetivo es que los usuarios conozcan las características premium, puedan descargar la app y experimentar la propuesta visual y funcional en cualquier dispositivo.
+Este proyecto está centrado en la experiencia de usuario (UX/UI) y utiliza componentes reutilizables de React junto con CSS responsivo para garantizar una navegación fluida en móviles, tablets y escritorio.
 
-## Available Scripts
+🚀 Tecnologías utilizadas
+---
+⚛️ React – Para la construcción de componentes reutilizables.
+🧠 JavaScript (ES6+) – Lógica de la aplicación.
+🎨 HTML5 y CSS3 – Estructura y estilos responsivos.
+📦 React Icons – Para íconos.
 
-In the project directory, you can run:
+🗂️ Estructura del proyecto
+---
+```plaintext
+equalizerlandingpage
+├── public/                      # Recursos estáticos
+├── src/
+│   ├── assets/                  # Recursos adicionales (hero, celular, decoración)
+│        └── images/                  # Imágenes y decoraciones
+│
+│   ├── components/              # Componentes reutilizables
+│   │   ├── Hero/                # Hero.js + Hero.css
+│   │   ├── Pricing/             # Pricing.js + Pricing.css
+│   │   └── otros-componentes/   # Por ejemplo Footer.js + Footer.css
+│   │
+│   ├── App.jsx                  # Componente principal con rutas
+│   ├── App.css                  # Estilos globales
+│   ├── index.js                 # Punto de entrada de React
+│
+├── package.json                 # Dependencias y scripts
+└── README.md                     # Documentación del proyecto
+```
+---
+🌐 Ruteo
+---
+Actualmente, esta landing page es single page, por lo que no tiene múltiples rutas. Todos los componentes principales se encuentran en la Home (Hero, Pricing, etc.) y se renderizan dentro de App.js.
 
-### `npm start`
+⚙️ Instalación y ejecución
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clona el repositorio:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+git clone https://github.com/ceciliagutz/music-eq-landing.git
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Instala las dependencias:
 
-### `npm run build`
+cd equalizerlandingpage
+```bash
+npm install
+```
+Inicia el servidor de desarrollo:
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Abre tu navegador en:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+http://localhost:3000
+```
+🔄 Migración futura
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Integración con audio real para ecualización en tiempo real.
+Animaciones y transiciones más suaves.
+Optimización de imágenes y performance.
+Posible versión multi-ruta para más secciones de la app.
 
-### `npm run eject`
+👩‍💻 Desarrolladora
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Cecilia Guadalupe Gutierrez Urbano
