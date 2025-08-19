@@ -1,77 +1,92 @@
 .footer {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    color: #191826;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 40px;
+  color: #191826;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; 
+  gap: 20px;
+  box-sizing: border-box;
 }
-.footer-left {
-    flex:1;
+
+.logo-footer {
+  font-size: 28px;
+  font-weight: bold;
+  color: #191826;
 }
-.logo-footer{
-    font-size: 40px;
-    font-weight: bold;
-    color: #191826;
-    margin-bottom: 10px;
+
+.info-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 400px;
+  margin: 0 auto; 
+  text-align: center;
 }
-.info-footer{
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    max-width: 400px;
+
+.derechos,
+.contactus {
+  font-size: 14px;
+  font-weight: normal;
+  color: #191826;
 }
-.derechos , .contactus{
-    font-size: 18px;
-    font-weight:normal;
-    color: #191826;
-   
+
+.correo {
+  font-size: 14px;
+  font-weight: bold;
+  color: #191826;
 }
-.correo{
-    font-size: 18px;
-    font-weight:bold;
-    color: #191826;
-    margin: 5px 0;
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-.footer-right{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
-.social-links{
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-    flex-wrap: wrap;
+
+.social-icon {
+  font-size: 24px;
+  color: #191826;
+  transition: color 0.2s ease-in-out;
 }
-.social-icon{
-    font-size: 30px;
-    color:#191826;
-    transition: color 0.2s ease-in-out;
+
+.social-icon:hover {
+  color: #fa7453;
 }
-.social-icon:hover{
-    color: #fa7453
-}
+
 @media (max-width: 768px) {
   .footer {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
     text-align: center;
+    gap: 16px;
   }
 
-  .footer-left,
-  .info-footer,
-  .footer-email,
   .footer-right {
-    align-items: center;
+    justify-content: center;
   }
 
-  .social-links {
-    justify-content: center;
+  .logo-footer {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-footer {
+    font-size: 22px;
+  }
+
+  .derechos,
+  .contactus,
+  .correo {
+    font-size: 12px;
+  }
+
+  .social-icon {
+    font-size: 20px;
   }
 }
